@@ -1,11 +1,11 @@
 {
-  "name": "poesis-saf",
+  "name": "poesis-saf-preview",
   "owner": {
     "name": "Poesis SAS",
     "email": "clement.cazaud@poesis.cloud"
   },
   "metadata": {
-    "description": "Poesis SAF plugins for GitHub Copilot - stable channel (final releases).",
+    "description": "Poesis SAF plugins for GitHub Copilot - preview channel (pre-releases).",
     "version": "0.0.0"
   },
   "plugins": []
