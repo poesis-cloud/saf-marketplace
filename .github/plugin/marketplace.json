@@ -10,6 +10,33 @@
   },
   "plugins": [
     {
+      "name": "poesis-saf-agentic-harness",
+      "version": "1.0.0-alpha.2",
+      "description": "Deterministic governance - regulation - supervision - coordination of agentic organization: workflow orchestration; step, model, skill, instruction resolution; artifact transaction and versioning; logging; agent authorization.",
+      "source": {
+        "source": "github",
+        "repo": "poesis-cloud/saf-agentic-harness",
+        "ref": "plugin-v1.0.0-alpha.2",
+        "sha": "5ab8ded470eb27e1714d1678488ea2c73b145acb"
+      },
+      "license": "Apache-2.0",
+      "keywords": [
+        "harness",
+        "organization",
+        "governance",
+        "regulation",
+        "supervision",
+        "coordination",
+        "orchestration",
+        "workflow",
+        "agent",
+        "skill",
+        "instruction",
+        "artifact",
+        "template"
+      ]
+    },
+    {
       "name": "poesis-saf-agentic-organization",
       "version": "1.0.0-alpha.1",
       "description": "A governed - regulated - supervised - coordinated SAFe-shaped agentic organization: portfolio, program and team orchestrators with a specialist bench.",
