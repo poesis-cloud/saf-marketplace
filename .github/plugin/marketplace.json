@@ -38,13 +38,13 @@
     },
     {
       "name": "poesis-saf-agentic-organization",
-      "version": "1.0.0-alpha.3",
-      "description": "A governed - regulated - supervised - coordinated SAFe-shaped agentic organization: portfolio, program and team orchestrators with a specialist bench.",
+      "version": "1.0.0-alpha.4",
+      "description": "A governed - regulated - supervised - coordinated agentic organization that applies SAFe\u00ae: portfolio, large solution, ART and team orchestrators, SAFe role authors and an expert bench that challenges every main artifact before the human gate.",
       "source": {
         "source": "github",
         "repo": "poesis-cloud/saf-agentic-organization",
-        "ref": "plugin-v1.0.0-alpha.3",
-        "sha": "bc4506a5cbae0bd31e38ab16ddbe1e80bc211581"
+        "ref": "plugin-v1.0.0-alpha.4",
+        "sha": "e3e1a0b5fa51b094ee699ec1db69db6977e03ca4"
       },
       "license": "Apache-2.0",
       "keywords": [
