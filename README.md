@@ -13,7 +13,7 @@ the Copilot CLI, the GitHub Copilot app, and VS Code (Copilot session target).
 | Plugin | Description |
 | --- | --- |
 | `poesis-saf-agentic-harness` | Deterministic governance - regulation - supervision - coordination of agentic organization: workflow orchestration; step, model, skill, instruction resolution; artifact transaction and versioning; logging; agent authorization. |
-| `poesis-saf-agentic-organization` | A governed - regulated - supervised - coordinated SAFe-shaped agentic organization: portfolio, program and team orchestrators with a specialist bench. |
+| `poesis-saf-agentic-organization` | A governed - regulated - supervised - coordinated agentic organization that applies SAFe®: portfolio, program and team orchestrators with a specialist bench. |
 
 Install both: the organization is governed by the harness.
 
