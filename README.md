@@ -1,7 +1,13 @@
 # Poesis SAF marketplace
 
-The plugin marketplace for the **Systemic Agentic Framework (SAF)** by Poesis, for GitHub Copilot:
-the Copilot CLI, the GitHub Copilot app, and VS Code (Copilot session target).
+The plugin marketplace for the **Systemic Agentic Framework (SAF)** by Poesis, for GitHub Copilot
+(the Copilot CLI, the GitHub Copilot app, and VS Code with the Copilot session target) and for
+**Claude Code**. One catalogue per host, same channels and plugin names:
+
+| Host | Catalogue |
+| --- | --- |
+| GitHub Copilot | `.github/plugin/marketplace.json` |
+| Claude Code | `.claude-plugin/marketplace.json` |
 
 | Channel | Branch | Marketplace id | Receives |
 | --- | --- | --- | --- |
@@ -37,12 +43,37 @@ VS Code: enable `chat.plugins.enabled`, add `poesis-cloud/saf-marketplace` to
 `chat.plugins.marketplaces`, install both plugins from the Agent Customizations editor, and use
 the **Copilot** session target.
 
+Claude Code (stable):
+
+```bash
+claude plugin marketplace add poesis-cloud/saf-marketplace
+claude plugin install poesis-saf-agentic-harness@poesis-saf
+claude plugin install poesis-saf-agentic-organization@poesis-saf
+```
+
+Claude Code preview channel: declare the `preview` branch in `.claude/settings.json`, then
+install from `@poesis-saf-preview`:
+
+```json
+{
+    "extraKnownMarketplaces": {
+        "poesis-saf-preview": {
+            "source": { "source": "github", "repo": "poesis-cloud/saf-marketplace", "ref": "preview" }
+        }
+    }
+}
+```
+
+The SAF `init` skill writes this file for a new workspace. A Claude Code entry appears once its
+plugin repository has released a Claude Code plugin (orphan branch `claude-plugin`, tag
+`claude-plugin-v<version>`).
+
 Full documentation: <https://docs.poesis.cloud/saf/>.
 
 ## How this repository is updated
 
 Release workflows of the plugin repositories open a pull request here, bumping the entry's
-`version`, `ref` and `sha`. The pull request merges automatically once its validation passes.
+`version`, `ref` and `sha` in both catalogues (the Copilot plugin's and the Claude Code plugin's). The pull request merges automatically once its validation passes.
 Auto-update is opt-in for users.
 
 ## License
